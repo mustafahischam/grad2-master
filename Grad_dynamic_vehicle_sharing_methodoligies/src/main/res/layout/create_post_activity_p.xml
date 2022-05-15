@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/button_rider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:id="@+id/button_driver_layout"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Passenger_title"
+                    android:textColor="@color/blue4"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/choose_organization"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_spinner"
+                    android:padding="10dp"
+                    android:prompt="@string/choose_organization"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/new_ride_request_post"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button3"
+                android:elevation="10dp"
+                android:text="Make a Carpool Request"
+                android:textColor="#040303"
+                android:textColorHighlight="#000000" />
+        </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/posts_activity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_below="@id/new_ride_request_post"
+                tools:layout="@layout/user_page_post_layout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

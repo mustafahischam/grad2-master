@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/source_location_destination_fragment_layout"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/primaryWhite"
+              android:orientation="vertical"
+              android:clipToPadding="false"
+              tools:context=".Post_information_Activity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sdl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/post_information_activity_sdl" />
+
+</LinearLayout>

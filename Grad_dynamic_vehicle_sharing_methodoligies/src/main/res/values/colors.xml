@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3c4f6b</color>
+    <color name="colorPrimaryLight">#5a677e</color>
+    <color name="colorPrimaryDark">#102740</color>
+    <color name="colorAccent">#2F3D52</color>
+    <color name="primaryWhite">#fcfdff</color>
+    <color name="primary_text">#e2e2e2</color>
+    <color name="secondary_text">#f9f9f9</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#ffffff</color>
+
+    <color name="maroon">#ffffff</color>
+    <color name="teal">#539b96</color>
+    <color name="brown">#ffffff</color>
+
+
+    <color name="blue1"> #355C7D </color>
+    <color name="blue2"> #1C6995 </color>
+    <color name="blue3"> #76afcf</color>
+    <color name="blue4"> #1C6995</color>
+    <color name="blue5"> #72d3b4</color>
+
+
+    //Gradient Background
+    <color name="endColor"> #355C7D </color>
+    <color name="startColor"> #355C7D </color>
+    <color name="centerColor"> #355C7D</color>
+    <color name="organizationColor"> #355C7D </color>
+    <color name="waypointColor">#ffffff</color>
+
+
+</resources>

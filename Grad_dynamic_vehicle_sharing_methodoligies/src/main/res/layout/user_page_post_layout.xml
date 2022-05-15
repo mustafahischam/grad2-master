@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_all_posts_linearlayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryWhite"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    tools:context=".Passenger_Driver_Main_Activity">
+    <TextView
+        android:id="@+id/no_posts_found_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="no posts ."
+        android:visibility="gone"
+        android:gravity="center_vertical"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sdl_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/post" />
+
+</LinearLayout>

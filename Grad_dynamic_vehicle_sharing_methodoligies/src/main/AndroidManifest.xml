@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sasa.project.grad2">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <application
+        android:name="com.sasa.project.grad2.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDbJdB5ZPbyVqbFMehjikoLLjjSwXFYhLk" />
+
+        <activity android:name="com.sasa.project.grad2.BaseActivity" />
+        <activity
+            android:name="com.sasa.project.grad2.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.sasa.project.grad2.Create_post_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sasa.project.grad2.Passenger_Driver_Main_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.sasa.project.grad2.Create_new_organization_Activity" />
+        <activity
+            android:name="com.sasa.project.grad2.Post_information_Activity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.sasa.project.grad2.Join_organization_Activity" />
+        <activity android:name="com.sasa.project.grad2.Display_organizations_Activity" />
+        <activity
+            android:name="com.sasa.project.grad2.Register_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.sasa.project.grad2.Edit_user_information_Activity" />
+        <activity
+            android:name="com.sasa.project.grad2.Sign_In_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sasa.project.grad2.User_page_Activity"
+            android:label="@string/title_activity_profile_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>

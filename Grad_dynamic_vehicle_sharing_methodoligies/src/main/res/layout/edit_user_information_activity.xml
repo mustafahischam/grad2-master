@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue3"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sasa.project.grad2.Edit_user_information_Activity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Edit Your Profile"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/pp"
+        android:ellipsize="end"
+        android:hint="@string/info_first"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#050505"
+        android:textColorHighlight="#121111"
+        android:textColorHint="#090808"
+        android:textColorLink="#050505"
+        app:layout_constraintBottom_toTopOf="@+id/last_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/pp"
+        android:ellipsize="end"
+        android:hint="@string/info_last"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#050505"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#090909"
+        android:textColorLink="#040303"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phone_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call_forward"
+        android:ellipsize="end"
+        android:hint="@android:string/emptyPhoneNumber"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#070707"
+        android:textColorHighlight="#0C0C0C"
+        android:textColorHint="#0E0E0E"
+        android:textColorLink="#090808"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_name" />
+
+
+    rasha@gmail.com 122e
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Choose Organization To be Active In"
+        android:textColor="#050505"
+        android:textColorHighlight="#070707"
+        android:textColorHint="#040303"
+        android:textColorLink="#040303"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/choose_organization"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Spinner
+        android:id="@+id/choose_organization"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="340dp"
+        android:background="#FFFFFF"
+        android:dropDownWidth="match_parent"
+        android:prompt="@string/choose_organization"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/round_button"
+        android:text="@string/info_save"
+        android:textColor="#0C0C0C"
+        android:textColorHighlight="#0B0A0A"
+        android:textColorHint="#070707"
+        android:textColorLink="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

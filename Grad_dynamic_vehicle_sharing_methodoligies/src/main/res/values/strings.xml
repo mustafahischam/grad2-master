@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Grad_dynamic_vehicle_sharing_methodoligies</string>
+    <string name="password_label">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="driver_post_button_title">Offer New Carpool</string>
+    <string name="rider_post_button_title">Request New Carpool</string>
+    <string name="driver_page_title">Ride Requests</string>
+    <string name="Passenger_title">Driver Offers</string>
+    <string name="all_organizations_fragment">Available Organizations</string>
+    <string name="user_organization_fragment">My Organizations</string>
+    <string name="enter_info">Enter Your Information</string>
+    <string name="info_first">First Name</string>
+    <string name="info_last">Last Name</string>
+    <string name="info_save">Save Information</string>
+    <string name="choose_organization">Choose an Organization</string>
+    <string name="info_join_an_organization">Join an Organization</string>
+    <string name="title_activity_profile_page">Title in profile page</string>
+</resources>

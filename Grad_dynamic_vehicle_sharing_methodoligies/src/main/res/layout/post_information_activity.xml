@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.sasa.project.grad2.Post_information_Activity">
+
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/delete_post"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/ic_menu_delete"
+            android:visibility="invisible" />
+        <!--android:marginRight="10dp"-->
+        <!--android:marginTop="10dp"-->
+
+        <include
+            android:id="@+id/post_author_layout"
+            layout="@layout/post_information_activity_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="#FFFFFF" />
+
+        <include
+            android:id="@+id/post_text_layout"
+            layout="@layout/post_information_activity_sd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_author_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/post_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#FFFFFF" />
+
+    <include
+        android:id="@+id/post_date_time"
+        layout="@layout/post_information_activity_date"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/post_divider"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/text_carpool_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_date_time"
+        android:background="#FFFFFF"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="" />
+
+    <FrameLayout
+        android:id="@+id/soure_location_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_carpool_details"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        tools:layout="@layout/sdl_fragment" />
+
+    <ScrollView
+        android:id="@+id/scroll_post_info"
+        android:layout_width="match_parent"
+        android:layout_height="527dp"
+        android:layout_below="@+id/soure_location_view"
+        android:layout_marginTop="-31dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/post_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:id="@+id/comment_stuff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <EditText
+                    android:id="@+id/field_comment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:hint="Write a comment here.."
+                    android:maxLines="1" />
+
+                <Button
+                    android:id="@+id/button_post_comment"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/round_button3"
+                    android:text="Comment"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Comments_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="347dp"
+                android:background="#FFFFFF"
+                tools:listitem="@layout/post_comment" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/Open_Map"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button2"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:text="Lunch Map" />
+
+    <Button
+
+        android:id="@+id/button_create_carpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button2"
+        android:text="Find Matches" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab_find_matching_posts"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginBottom="20dp"/>-->
+
+    <include
+        android:id="@+id/Map_layout"
+        layout="@layout/post_information_activity_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
+

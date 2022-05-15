@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#286A88"
+    android:weightSum="6"
+    tools:ignore="MissingPrefix">
+
+
+    <TextView
+        android:id="@+id/post_carousel_label"
+        style="@style/post_label"
+        android:layout_width="248dp"
+        android:layout_height="64dp"
+        android:text="Stay on the Pickup Point you want"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout15"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/post_carousel_label"
+        map:layout_constraintVertical_bias="0.0">
+
+
+        <fragment
+            android:id="@+id/pickup_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            map:cameraBearing="112.3"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/locationMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageMarker"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@android:drawable/ic_menu_edit" />
+            </LinearLayout>
+        </fragment>
+
+        <TextView
+            android:id="@+id/Driver_offer_title"
+            style="@style/post_title"
+            android:layout_width="252dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="32dp"
+            android:textSize="18sp"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

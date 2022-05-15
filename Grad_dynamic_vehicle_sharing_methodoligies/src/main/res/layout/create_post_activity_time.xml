@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="#224A78"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/Driver_offer_title"
+            style="@style/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/post_carousel_label"
+            style="@style/post_label"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Choose Your Trip time "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Driver_offer_title" />
+
+        <TextView
+            android:id="@+id/post_carousel_label_time_arrival"
+            style="@style/post_label"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Arrive Before"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_carousel_label" />
+
+        <Button
+            android:id="@+id/arrive_before_time"
+            style="@style/post_text_field"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:hint="Reach Destination Before"
+            android:inputType="time"
+            android:onClick="TimeDialog"
+            android:textAlignment="center"
+            android:textColor="@color/icons"
+            android:textColorHighlight="@color/icons"
+            android:textColorHint="@color/icons"
+            android:textColorLink="@color/icons"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_carousel_label_time_arrival" />
+
+        <TextView
+            android:id="@+id/post_carousel_label_time_depart"
+            style="@style/post_label"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Leave After"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/arrive_before_time" />
+
+        <Button
+            android:id="@+id/leave_after_time"
+            style="@style/post_text_field"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:inputType="time"
+            android:onClick="TimeDialog"
+            android:text="Leave Source After"
+            android:textAlignment="center"
+            android:textColor="@color/icons"
+            android:textColorHighlight="@color/icons"
+            android:textColorHint="@color/icons"
+            android:textColorLink="@color/icons"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_carousel_label_time_depart" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="126dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="464dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

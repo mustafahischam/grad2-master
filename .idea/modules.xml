@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies.iml" filepath="$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies.iml" group="Grad_dynamic_vehicle_sharing_methodoligies" />
+      <module fileurl="file://$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies/Grad_dynamic_vehicle_sharing_methodoligies-Grad_dynamic_vehicle_sharing_methodoligies.iml" filepath="$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies/Grad_dynamic_vehicle_sharing_methodoligies-Grad_dynamic_vehicle_sharing_methodoligies.iml" group="Grad_dynamic_vehicle_sharing_methodoligies/Grad_dynamic_vehicle_sharing_methodoligies" />
+      <module fileurl="file://$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies/app.iml" filepath="$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grad2-master.iml" filepath="$PROJECT_DIR$/grad2-master.iml" group="grad2-master" />
+      <module fileurl="file://$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies/grad2-master-Grad_dynamic_vehicle_sharing_methodoligies.iml" filepath="$PROJECT_DIR$/Grad_dynamic_vehicle_sharing_methodoligies/grad2-master-Grad_dynamic_vehicle_sharing_methodoligies.iml" group="grad2-master/Grad_dynamic_vehicle_sharing_methodoligies" />
+    </modules>
+  </component>
+</project>
